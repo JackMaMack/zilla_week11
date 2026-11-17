@@ -90,3 +90,18 @@ section.one article{
     /* the explicit grid is what you define, the implicit grid is what the browser figures out based on content that spills outside of your defined explicit grid in the example below, the thrid row won't have any height */
     grid-template-rows: 120px 120px;
 }
+
+section.two article {
+    display: grid;
+
+    /* repeat lets you define any number of the rows/columns to take up the same amount of space */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* grid-auto-rows tells all rows to be this size */
+    grid-auto-rows: 120px;
+}
+
+/* you can control the individual cells - or the children of the grid - to position or size them individually */
+section.two div:nth-child(1){
+    color: burlywood;
+}
