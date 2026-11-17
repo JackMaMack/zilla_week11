@@ -152,3 +152,8 @@ section.three div:nth-child(5){
     grid-row-end: span 2; */
 }
 
+/* grid 4 - using a grid map */
+
+section.four article{
+    display:grid;
+}
