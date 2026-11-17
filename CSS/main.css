@@ -122,3 +122,9 @@ section.two div:nth-child(2){
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
+section.two div:nth-child(6){
+    grid-column-start: 1;
+    /* you can use span to say how many columns or rows to stretch across */
+    grid-column-end: span 4;
+}
