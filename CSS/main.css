@@ -103,5 +103,22 @@ section.two article {
 
 /* you can control the individual cells - or the children of the grid - to position or size them individually */
 section.two div:nth-child(1){
-    color: burlywood;
+    color: blue;
+
+    /* you can tell one of your cells to start at a row or column, end at a row or column */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+section.two div:nth-child(2){
+    color:darkorchid;
+
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
